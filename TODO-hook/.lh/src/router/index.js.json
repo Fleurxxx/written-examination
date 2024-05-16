@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/router/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1715783505676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1715783639855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+/*\r\n+ * @Author: Fleurxxx 984209872@qq.com\r\n+ * @Date: 2024-05-15 22:31:40\r\n+ * @LastEditors: Fleurxxx 984209872@qq.com\r\n+ * @LastEditTime: 2024-05-15 22:31:46\r\n+ * @FilePath: \\vite-project\\src\\router\\index.js\r\n+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n+ */\r\n"
+                }
+            ],
+            "date": 1715783505676,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}

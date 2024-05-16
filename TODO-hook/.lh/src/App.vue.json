@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/App.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1715783946265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1715783952997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+<script setup lang=\"ts\">\n+import HelloWorld from './components/HelloWorld.vue'\n+</script>\n+\n+<template>\n+  <router-view></router-view>\n+\n+<style scoped>\n+.logo {\n+  height: 6em;\n+  padding: 1.5em;\n+  will-change: filter;\n+  transition: filter 300ms;\n+}\n+.logo:hover {\n+  filter: drop-shadow(0 0 2em #646cffaa);\n+}\n+.logo.vue:hover {\n+  filter: drop-shadow(0 0 2em #42b883aa);\n+}\n+</style>\n"
+                },
+                {
+                    "date": 1715783962499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,25 +18,4 @@\n .logo.vue:hover {\n   filter: drop-shadow(0 0 2em #42b883aa);\n }\n </style>\n-<script setup lang=\"ts\">\n-import HelloWorld from './components/HelloWorld.vue'\n-</script>\n-\n-<template>\n-  <router-\n-\n-<style scoped>\n-.logo {\n-  height: 6em;\n-  padding: 1.5em;\n-  will-change: filter;\n-  transition: filter 300ms;\n-}\n-.logo:hover {\n-  filter: drop-shadow(0 0 2em #646cffaa);\n-}\n-.logo.vue:hover {\n-  filter: drop-shadow(0 0 2em #42b883aa);\n-}\n-</style>\n"
+                },
+                {
+                    "date": 1715783969536,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,4 @@\n-<script setup lang=\"ts\">\n-import HelloWorld from './components/HelloWorld.vue'\n-</script>\n-\n <template>\n   <router-view></router-view>\n \n <style scoped>\n"
+                },
+                {
+                    "date": 1715783974819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <template>\n   <router-view></router-view>\n-\n+  \n <style scoped>\n .logo {\n   height: 6em;\n   padding: 1.5em;\n"
+                },
+                {
+                    "date": 1715783981166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+<template>\n+  <router-view></router-view>\n+<script setup lang=\"ts\">\n+import HelloWorld from './components/HelloWorld.vue'\n+</script>\n+<style scoped>\n+.logo {\n+  height: 6em;\n+  padding: 1.5em;\n+  will-change: filter;\n+  transition: filter 300ms;\n+}\n+.logo:hover {\n+  filter: drop-shadow(0 0 2em #646cffaa);\n+}\n+.logo.vue:hover {\n+  filter: drop-shadow(0 0 2em #42b883aa);\n+}\n+</style>\n"
+                },
+                {
+                    "date": 1715783988958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+<template>\n+  <router-view></router-view>\n+</template>\n+  \n+<script setup lang=\"ts\">\n+import HelloWorld from './components/HelloWorld.vue'\n+</script>\n+<style scoped>\n+.logo {\n+  height: 6em;\n+  padding: 1.5em;\n+  will-change: filter;\n+  transition: filter 300ms;\n+}\n+.logo:hover {\n+  filter: drop-shadow(0 0 2em #646cffaa);\n+}\n+.logo.vue:hover {\n+  filter: drop-shadow(0 0 2em #42b883aa);\n+}\n+</style>\n"
+                },
+                {
+                    "date": 1715784007531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <template>\n   <router-view></router-view>\n </template>\n-  \n+\n <script setup lang=\"ts\">\n-import HelloWorld from './components/HelloWorld.vue'\n+\n </script>\n <style scoped>\n .logo {\n   height: 6em;\n@@ -18,40 +18,4 @@\n .logo.vue:hover {\n   filter: drop-shadow(0 0 2em #42b883aa);\n }\n </style>\n-<template>\n-  <router-view></router-view>\n-<script setup lang=\"ts\">\n-import HelloWorld from './components/HelloWorld.vue'\n-</script>\n-<style scoped>\n-.logo {\n-  height: 6em;\n-  padding: 1.5em;\n-  will-change: filter;\n-  transition: filter 300ms;\n-}\n-.logo:hover {\n-  filter: drop-shadow(0 0 2em #646cffaa);\n-}\n-.logo.vue:hover {\n-  filter: drop-shadow(0 0 2em #42b883aa);\n-}\n-</style>\n-<template>\n-  <router-view></router-view>\n-  \n-<style scoped>\n-.logo {\n-  height: 6em;\n-  padding: 1.5em;\n-  will-change: filter;\n-  transition: filter 300ms;\n-}\n-.logo:hover {\n-  filter: drop-shadow(0 0 2em #646cffaa);\n-}\n-.logo.vue:hover {\n-  filter: drop-shadow(0 0 2em #42b883aa);\n-}\n-</style>\n"
+                }
+            ],
+            "date": 1715783946265,
+            "name": "Commit-0",
+            "content": "<script setup lang=\"ts\">\nimport HelloWorld from './components/HelloWorld.vue'\n</script>\n\n<template>\n  <router-\n\n<style scoped>\n.logo {\n  height: 6em;\n  padding: 1.5em;\n  will-change: filter;\n  transition: filter 300ms;\n}\n.logo:hover {\n  filter: drop-shadow(0 0 2em #646cffaa);\n}\n.logo.vue:hover {\n  filter: drop-shadow(0 0 2em #42b883aa);\n}\n</style>\n"
+        }
+    ]
+}

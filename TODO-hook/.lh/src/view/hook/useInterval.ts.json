@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/view/hook/useInterval.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1715847724983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1715847737027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,10 @@\n import { ref, onMounted, onBeforeUnmount } from 'vue';\r\n \r\n-interface IntervalControl {\r\n-  start: () => void;\r\n-  stop: () => void;\r\n-  pause: () => void;\r\n-  resume: () => void;\r\n-}\r\n+function useInterval(fn, delay, immediate = false) {\r\n+  const intervalId = ref(null);\r\n+  const isPaused = ref(false);\r\n \r\n-function useInterval(fn: () => void, delay: number, immediate = false): IntervalControl {\r\n-  const intervalId = ref<number | null>(null);\r\n-  const isPaused = ref<boolean>(false);\r\n-\r\n   const start = () => {\r\n     if (immediate) {\r\n       fn();\r\n     }\r\n@@ -22,12 +15,10 @@\n     }, delay);\r\n   };\r\n \r\n   const stop = () => {\r\n-    if (intervalId.value !== null) {\r\n-      clearInterval(intervalId.value);\r\n-      intervalId.value = null;\r\n-    }\r\n+    clearInterval(intervalId.value);\r\n+    intervalId.value = null;\r\n   };\r\n \r\n   const pause = () => {\r\n     isPaused.value = true;\r\n"
+                }
+            ],
+            "date": 1715847724983,
+            "name": "Commit-0",
+            "content": "import { ref, onMounted, onBeforeUnmount } from 'vue';\r\n\r\ninterface IntervalControl {\r\n  start: () => void;\r\n  stop: () => void;\r\n  pause: () => void;\r\n  resume: () => void;\r\n}\r\n\r\nfunction useInterval(fn: () => void, delay: number, immediate = false): IntervalControl {\r\n  const intervalId = ref<number | null>(null);\r\n  const isPaused = ref<boolean>(false);\r\n\r\n  const start = () => {\r\n    if (immediate) {\r\n      fn();\r\n    }\r\n    intervalId.value = setInterval(() => {\r\n      if (!isPaused.value) {\r\n        fn();\r\n      }\r\n    }, delay);\r\n  };\r\n\r\n  const stop = () => {\r\n    if (intervalId.value !== null) {\r\n      clearInterval(intervalId.value);\r\n      intervalId.value = null;\r\n    }\r\n  };\r\n\r\n  const pause = () => {\r\n    isPaused.value = true;\r\n  };\r\n\r\n  const resume = () => {\r\n    isPaused.value = false;\r\n  };\r\n\r\n  onMounted(() => {\r\n    if (intervalId.value === null) {\r\n      start();\r\n    }\r\n  });\r\n\r\n  onBeforeUnmount(() => {\r\n    stop();\r\n  });\r\n\r\n  return { start, stop, pause, resume };\r\n}\r\n\r\nexport default useInterval;\r\n"
+        }
+    ]
+}

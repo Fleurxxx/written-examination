@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/store/index.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1715794734609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1715794745600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import { createPinia } from 'pinia'\r\n+import { user } from './user';\r\n+import piniaPluginPersist from 'pinia-plugin-persist'\r\n+\r\n+const store = createPinia()\r\n+store.use(piniaPluginPersist) \r\n+   \r\n+export { user };\r\n+export default store;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715794754716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { createPinia } from 'pinia'\r\n-import { user } from './user';\r\n+import { home } from './user';\r\n import piniaPluginPersist from 'pinia-plugin-persist'\r\n \r\n const store = createPinia()\r\n store.use(piniaPluginPersist) \r\n"
+                },
+                {
+                    "date": 1715794869350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import { createPinia } from 'pinia'\r\n-import { home } from './user';\r\n+import { todo } from './todo';\r\n import piniaPluginPersist from 'pinia-plugin-persist'\r\n \r\n const store = createPinia()\r\n store.use(piniaPluginPersist) \r\n    \r\n-export { user };\r\n+export { todo };\r\n export default store;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715795197102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { createPinia } from 'pinia'\r\n-import { todo } from './todo';\r\n+import { todo } from './todo.ts';\r\n import piniaPluginPersist from 'pinia-plugin-persist'\r\n \r\n const store = createPinia()\r\n store.use(piniaPluginPersist) \r\n"
+                },
+                {
+                    "date": 1715795604717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { createPinia } from 'pinia'\r\n-import { todo } from './todo.ts';\r\n+import { todo } from './todo';\r\n import piniaPluginPersist from 'pinia-plugin-persist'\r\n \r\n const store = createPinia()\r\n store.use(piniaPluginPersist) \r\n"
+                },
+                {
+                    "date": 1715795655454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { createPinia } from 'pinia'\r\n-import { todo } from './todo';\r\n+cccc\r\n import piniaPluginPersist from 'pinia-plugin-persist'\r\n \r\n const store = createPinia()\r\n store.use(piniaPluginPersist) \r\n"
+                },
+                {
+                    "date": 1715795673542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { createPinia } from 'pinia'\r\n-cccc\r\n+import { todo } from './todo';\r\n import piniaPluginPersist from 'pinia-plugin-persist'\r\n \r\n const store = createPinia()\r\n store.use(piniaPluginPersist) \r\n"
+                },
+                {
+                    "date": 1715795696344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { createPinia } from 'pinia'\r\n-import { todo } from './todo';\r\n+import { useTodo } from './todo';\r\n import piniaPluginPersist from 'pinia-plugin-persist'\r\n \r\n const store = createPinia()\r\n store.use(piniaPluginPersist) \r\n"
+                }
+            ],
+            "date": 1715794734609,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}

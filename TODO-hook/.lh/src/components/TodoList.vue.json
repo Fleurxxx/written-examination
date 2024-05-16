@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/components/TodoList.vue",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1715789000677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1715789251609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,12 @@\n+<!--\r\n+ * @Author: Fleurxxx 984209872@qq.com\r\n+ * @Date: 2024-05-16 00:03:07\r\n+ * @LastEditors: Fleurxxx 984209872@qq.com\r\n+ * @LastEditTime: 2024-05-16 00:07:31\r\n+ * @FilePath: \\vite-project\\src\\components\\TodoList.vue\r\n+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n+-->\r\n <template>\r\n     <div class=\"todo-list\">\r\n       <TodoItem\r\n         v-for=\"(todo, index) in todos\"\r\n@@ -7,38 +15,38 @@\n         @delete=\"deleteTodo(index)\"\r\n         @edit=\"editTodo(index, $event)\"\r\n       />\r\n     </div>\r\n-  </template>\r\n+</template>\r\n+\r\n+<script lang=\"ts\">\r\n+import { defineComponent } from 'vue';\r\n+import TodoItem from './TodoItem.vue';\r\n+\r\n+export default defineComponent({\r\n+name: 'TodoList',\r\n+components: { TodoItem },\r\n+props: {\r\n+    todos: Array,\r\n+},\r\n+emits: ['delete', 'edit'],\r\n+setup(_, { emit }) {\r\n+    const deleteTodo = (index: number) => {\r\n+    emit('delete', index);\r\n+    };\r\n+\r\n+    const editTodo = (index: number, newTodo: string) => {\r\n+    emit('edit', index, newTodo);\r\n+    };\r\n+\r\n+    return {\r\n+    deleteTodo,\r\n+    editTodo,\r\n+    };\r\n+},\r\n+});\r\n+</script>\r\n   \r\n-  <script lang=\"ts\">\r\n-  import { defineComponent } from 'vue';\r\n-  import TodoItem from './TodoItem.vue';\r\n-  \r\n-  export default defineComponent({\r\n-    name: 'TodoList',\r\n-    components: { TodoItem },\r\n-    props: {\r\n-      todos: Array,\r\n-    },\r\n-    emits: ['delete', 'edit'],\r\n-    setup(_, { emit }) {\r\n-      const deleteTodo = (index: number) => {\r\n-        emit('delete', index);\r\n-      };\r\n-  \r\n-      const editTodo = (index: number, newTodo: string) => {\r\n-        emit('edit', index, newTodo);\r\n-      };\r\n-  \r\n-      return {\r\n-        deleteTodo,\r\n-        editTodo,\r\n-      };\r\n-    },\r\n-  });\r\n-  </script>\r\n-  \r\n   <style scoped>\r\n   .todo-list {\r\n     list-style-type: none;\r\n     padding: 0;\r\n"
+                },
+                {
+                    "date": 1715789258884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,12 +44,11 @@\n     };\r\n },\r\n });\r\n </script>\r\n-  \r\n-  <style scoped>\r\n-  .todo-list {\r\n-    list-style-type: none;\r\n-    padding: 0;\r\n-  }\r\n-  </style>\r\n+<style scoped>\r\n+.todo-list {\r\n+list-style-type: none;\r\n+padding: 0;\r\n+}\r\n+</style>\r\n   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715789408946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     };\r\n },\r\n });\r\n </script>\r\n-<style scoped>\r\n+<style scoped lang=\"less\">\r\n .todo-list {\r\n list-style-type: none;\r\n padding: 0;\r\n }\r\n"
+                },
+                {
+                    "date": 1715789900099,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,13 +30,13 @@\n },\r\n emits: ['delete', 'edit'],\r\n setup(_, { emit }) {\r\n     const deleteTodo = (index: number) => {\r\n-    emit('delete', index);\r\n+        emit('delete', index);\r\n     };\r\n \r\n     const editTodo = (index: number, newTodo: string) => {\r\n-    emit('edit', index, newTodo);\r\n+        emit('edit', index, newTodo);\r\n     };\r\n \r\n     return {\r\n     deleteTodo,\r\n"
+                },
+                {
+                    "date": 1715789975119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <!--\r\n  * @Author: Fleurxxx 984209872@qq.com\r\n  * @Date: 2024-05-16 00:03:07\r\n  * @LastEditors: Fleurxxx 984209872@qq.com\r\n- * @LastEditTime: 2024-05-16 00:07:31\r\n+ * @LastEditTime: 2024-05-16 00:19:34\r\n  * @FilePath: \\vite-project\\src\\components\\TodoList.vue\r\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n -->\r\n <template>\r\n@@ -38,10 +38,10 @@\n         emit('edit', index, newTodo);\r\n     };\r\n \r\n     return {\r\n-    deleteTodo,\r\n-    editTodo,\r\n+        deleteTodo,\r\n+        editTodo,\r\n     };\r\n },\r\n });\r\n </script>\r\n"
+                },
+                {
+                    "date": 1715789987176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n  * @FilePath: \\vite-project\\src\\components\\TodoList.vue\r\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n -->\r\n <template>\r\n-    <div class=\"todo-list\">\r\n+    <div class=\"todo\">\r\n       <TodoItem\r\n         v-for=\"(todo, index) in todos\"\r\n         :key=\"index\"\r\n         :todo=\"todo\"\r\n@@ -46,9 +46,9 @@\n });\r\n </script>\r\n <style scoped lang=\"less\">\r\n .todo-list {\r\n-list-style-type: none;\r\n-padding: 0;\r\n+    list-style-type: none;\r\n+    padding: 0;\r\n }\r\n </style>\r\n   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715789992475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,54 @@\n+<!--\r\n+ * @Author: Fleurxxx 984209872@qq.com\r\n+ * @Date: 2024-05-16 00:03:07\r\n+ * @LastEditors: Fleurxxx 984209872@qq.com\r\n+ * @LastEditTime: 2024-05-16 00:19:34\r\n+ * @FilePath: \\vite-project\\src\\components\\TodoList.vue\r\n+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n+-->\r\n+<template>\r\n+    <div class=\"todo\">\r\n+      <TodoItem\r\n+        v-for=\"(todo, index) in todos\"\r\n+        :key=\"index\"\r\n+        :todo=\"todo\"\r\n+        @delete=\"deleteTodo(index)\"\r\n+        @edit=\"editTodo(index, $event)\"\r\n+      />\r\n+    </div>\r\n+</template>\r\n+\r\n+<script lang=\"ts\">\r\n+import { defineComponent } from 'vue';\r\n+import TodoItem from './TodoItem.vue';\r\n+\r\n+export default defineComponent({\r\n+name: 'TodoList',\r\n+components: { TodoItem },\r\n+props: {\r\n+    todos: Array,\r\n+},\r\n+emits: ['delete', 'edit'],\r\n+setup(_, { emit }) {\r\n+    const deleteTodo = (index: number) => {\r\n+        emit('delete', index);\r\n+    };\r\n+\r\n+    const editTodo = (index: number, newTodo: string) => {\r\n+        emit('edit', index, newTodo);\r\n+    };\r\n+\r\n+    return {\r\n+        deleteTodo,\r\n+        editTodo,\r\n+    };\r\n+},\r\n+});\r\n+</script>\r\n+<style scoped lang=\"less\">\r\n+.todo{\r\n+    list-style-type: none;\r\n+    padding: 0;\r\n+}\r\n+</style>\r\n+  \n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1715789000677,
+            "name": "Commit-0",
+            "content": "<template>\r\n    <div class=\"todo-list\">\r\n      <TodoItem\r\n        v-for=\"(todo, index) in todos\"\r\n        :key=\"index\"\r\n        :todo=\"todo\"\r\n        @delete=\"deleteTodo(index)\"\r\n        @edit=\"editTodo(index, $event)\"\r\n      />\r\n    </div>\r\n  </template>\r\n  \r\n  <script lang=\"ts\">\r\n  import { defineComponent } from 'vue';\r\n  import TodoItem from './TodoItem.vue';\r\n  \r\n  export default defineComponent({\r\n    name: 'TodoList',\r\n    components: { TodoItem },\r\n    props: {\r\n      todos: Array,\r\n    },\r\n    emits: ['delete', 'edit'],\r\n    setup(_, { emit }) {\r\n      const deleteTodo = (index: number) => {\r\n        emit('delete', index);\r\n      };\r\n  \r\n      const editTodo = (index: number, newTodo: string) => {\r\n        emit('edit', index, newTodo);\r\n      };\r\n  \r\n      return {\r\n        deleteTodo,\r\n        editTodo,\r\n      };\r\n    },\r\n  });\r\n  </script>\r\n  \r\n  <style scoped>\r\n  .todo-list {\r\n    list-style-type: none;\r\n    padding: 0;\r\n  }\r\n  </style>\r\n  "
+        }
+    ]
+}

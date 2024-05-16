@@ -1,0 +1,66 @@
+{
+    "sourceFile": "src/store/home.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1715784515303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1715794289588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,26 @@\n+/*\r\n+ * @Author: Fleurxxx 984209872@qq.com\r\n+ * @Date: 2024-05-15 22:48:18\r\n+ * @LastEditors: Fleurxxx 984209872@qq.com\r\n+ * @LastEditTime: 2024-05-15 22:48:35\r\n+ * @FilePath: \\vite-project\\src\\store\\home.ts\r\n+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n+ */\r\n import { defineStore } from 'pinia'\r\n-// useMain  可以是 useUser、useCart 之类的名字 \r\n-// defineStore('main',{..}) 在devtools 就使用 main 这个名\r\n+\r\n export const useMain = defineStore('main', {\r\n-    // 相当于data\r\n     state: () => {\r\n         return {\r\n-          // 所有这些属性都将自动推断其类型,如果推断失败可以试下 as xxx\r\n           counter: 0,\r\n           name: 'Eduardo',\r\n         }\r\n     },\r\n-    // 相当于计算属性\r\n     getters: {\r\n         doubleCount: (state) => {\r\n             return state.counter * 2\r\n         },\r\n     },\r\n-    // 相当于vuex的 mutation + action，可以同时写同步和异步的代码\r\n     actions: {\r\n         increment() {\r\n           this.counter++\r\n         },\r\n"
+                },
+                {
+                    "date": 1715794378355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,14 +19,7 @@\n             return state.counter * 2\r\n         },\r\n     },\r\n     actions: {\r\n-        increment() {\r\n-          this.counter++\r\n-        },\r\n-        randomizeCounter() {\r\n-            setTimeout(() => {\r\n-                this.counter = Math.round(100 * Math.random())\r\n-            }, 0);\r\n-        },\r\n+        \r\n     },\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715794386439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,16 +10,13 @@\n \r\n export const useMain = defineStore('main', {\r\n     state: () => {\r\n         return {\r\n-          counter: 0,\r\n-          name: 'Eduardo',\r\n+            todos:'',\r\n         }\r\n     },\r\n     getters: {\r\n-        doubleCount: (state) => {\r\n-            return state.counter * 2\r\n-        },\r\n+        \r\n     },\r\n     actions: {\r\n         \r\n     },\r\n"
+                },
+                {
+                    "date": 1715794449806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,5 +19,14 @@\n     },\r\n     actions: {\r\n         \r\n     },\r\n+    persist: {\r\n+        enabled: true, // 开启数据缓存\r\n+        strategies: [\r\n+          {\r\n+            storage: sessionStorage, // 默认是sessionStorage\r\n+            paths: ['id','username','signState','apply','video','curnum','curtime']\r\n+          },\r\n+        ],\r\n+      }\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715794455231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n     persist: {\r\n         enabled: true, // 开启数据缓存\r\n         strategies: [\r\n           {\r\n-            storage: sessionStorage, // 默认是sessionStorage\r\n+            storage: localStorage, // 默认是sessionStorage\r\n             paths: ['id','username','signState','apply','video','curnum','curtime']\r\n           },\r\n         ],\r\n       }\r\n"
+                },
+                {
+                    "date": 1715794467632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n         enabled: true, // 开启数据缓存\r\n         strategies: [\r\n           {\r\n             storage: localStorage, // 默认是sessionStorage\r\n-            paths: ['id','username','signState','apply','video','curnum','curtime']\r\n+            paths: ['todos']\r\n           },\r\n         ],\r\n       }\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715794475484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,12 +20,12 @@\n     actions: {\r\n         \r\n     },\r\n     persist: {\r\n-        enabled: true, // 开启数据缓存\r\n+        enabled: true,\r\n         strategies: [\r\n           {\r\n-            storage: localStorage, // 默认是sessionStorage\r\n+            storage: localStorage,\r\n             paths: ['todos']\r\n           },\r\n         ],\r\n       }\r\n"
+                },
+                {
+                    "date": 1715794539350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,12 @@\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n  */\r\n import { defineStore } from 'pinia'\r\n \r\n+interface FirstStoreState {\r\n+    todos: string;\r\n+  }\r\n+\r\n export const useMain = defineStore('main', {\r\n     state: () => {\r\n         return {\r\n             todos:'',\r\n"
+                },
+                {
+                    "date": 1715794547095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     todos: string;\r\n   }\r\n \r\n export const useMain = defineStore('main', {\r\n-    state: () => {\r\n+    state: () => FirstStoreState{\r\n         return {\r\n             todos:'',\r\n         }\r\n     },\r\n"
+                },
+                {
+                    "date": 1715794567399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     todos: string;\r\n   }\r\n \r\n export const useMain = defineStore('main', {\r\n-    state: () => FirstStoreState{\r\n+    state: ():FirstStoreState => {\r\n         return {\r\n             todos:'',\r\n         }\r\n     },\r\n"
+                },
+                {
+                    "date": 1715794573152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     todos: string;\r\n   }\r\n \r\n export const useMain = defineStore('main', {\r\n-    state: ():FirstStoreState => {\r\n+    state: (): FirstStoreState => {\r\n         return {\r\n             todos:'',\r\n         }\r\n     },\r\n"
+                },
+                {
+                    "date": 1715794611965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n /*\r\n  * @Author: Fleurxxx 984209872@qq.com\r\n  * @Date: 2024-05-15 22:48:18\r\n  * @LastEditors: Fleurxxx 984209872@qq.com\r\n- * @LastEditTime: 2024-05-15 22:48:35\r\n+ * @LastEditTime: 2024-05-16 01:36:51\r\n  * @FilePath: \\vite-project\\src\\store\\home.ts\r\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n  */\r\n import { defineStore } from 'pinia'\r\n@@ -12,9 +12,9 @@\n     todos: string;\r\n   }\r\n \r\n export const useMain = defineStore('main', {\r\n-    state: (): FirstStoreState => {\r\n+    state: () => {\r\n         return {\r\n             todos:'',\r\n         }\r\n     },\r\n"
+                }
+            ],
+            "date": 1715784515303,
+            "name": "Commit-0",
+            "content": "import { defineStore } from 'pinia'\r\n// useMain  可以是 useUser、useCart 之类的名字 \r\n// defineStore('main',{..}) 在devtools 就使用 main 这个名\r\nexport const useMain = defineStore('main', {\r\n    // 相当于data\r\n    state: () => {\r\n        return {\r\n          // 所有这些属性都将自动推断其类型,如果推断失败可以试下 as xxx\r\n          counter: 0,\r\n          name: 'Eduardo',\r\n        }\r\n    },\r\n    // 相当于计算属性\r\n    getters: {\r\n        doubleCount: (state) => {\r\n            return state.counter * 2\r\n        },\r\n    },\r\n    // 相当于vuex的 mutation + action，可以同时写同步和异步的代码\r\n    actions: {\r\n        increment() {\r\n          this.counter++\r\n        },\r\n        randomizeCounter() {\r\n            setTimeout(() => {\r\n                this.counter = Math.round(100 * Math.random())\r\n            }, 0);\r\n        },\r\n    },\r\n})"
+        }
+    ]
+}

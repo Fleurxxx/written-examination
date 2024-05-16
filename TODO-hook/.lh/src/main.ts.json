@@ -1,0 +1,62 @@
+{
+    "sourceFile": "src/main.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1715783709322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1715783721011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,15 @@\n+/*\n+ * @Author: Fleurxxx 984209872@qq.com\n+ * @Date: 2024-05-15 22:28:01\n+ * @LastEditors: Fleurxxx 984209872@qq.com\n+ * @LastEditTime: 2024-05-15 22:35:09\n+ * @FilePath: \\vite-project\\src\\main.ts\n+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\n+ */\n import { createApp } from 'vue'\n import './style.css'\n import App from './App.vue'\n-\n-createApp(App).mount('#app')\n-import { createApp } from 'vue'\n-import App from './App.vue'\n  \n  //routes\n  import router from \"./routes/index\"; \n  \n"
+                },
+                {
+                    "date": 1715783730385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n  */\n import { createApp } from 'vue'\n import './style.css'\n import App from './App.vue'\n- \n+\n+createApp(App).mount('#app')\n  //routes\n  import router from \"./routes/index\"; \n  \n const app= createApp(App)\n"
+                },
+                {
+                    "date": 1715783747760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+/*\n+ * @Author: Fleurxxx 984209872@qq.com\n+ * @Date: 2024-05-15 22:28:01\n+ * @LastEditors: Fleurxxx 984209872@qq.com\n+ * @LastEditTime: 2024-05-15 22:35:09\n+ * @FilePath: \\vite-project\\src\\main.ts\n+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\n+ */\n+import { createApp } from 'vue'\n+import './style.css'\n+import App from './App.vue'\n+\n+createApp(App).mount('#app')\n+ import router from \"./routes/index\"; \n+ \n+const app= createApp(App)\n+ \n+ //routes \n+ app.use(router)  \n+app.mount('#app')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715783776333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,41 +1,20 @@\n /*\n  * @Author: Fleurxxx 984209872@qq.com\n  * @Date: 2024-05-15 22:28:01\n  * @LastEditors: Fleurxxx 984209872@qq.com\n- * @LastEditTime: 2024-05-15 22:35:09\n+ * @LastEditTime: 2024-05-15 22:36:16\n  * @FilePath: \\vite-project\\src\\main.ts\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\n  */\n import { createApp } from 'vue'\n import './style.css'\n import App from './App.vue'\n \n createApp(App).mount('#app')\n- import router from \"./routes/index\"; \n+import router from \"./router/index\"; \n  \n const app= createApp(App)\n  \n  //routes \n  app.use(router)  \n-app.mount('#app')\n-/*\n- * @Author: Fleurxxx 984209872@qq.com\n- * @Date: 2024-05-15 22:28:01\n- * @LastEditors: Fleurxxx 984209872@qq.com\n- * @LastEditTime: 2024-05-15 22:35:09\n- * @FilePath: \\vite-project\\src\\main.ts\n- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\n- */\n-import { createApp } from 'vue'\n-import './style.css'\n-import App from './App.vue'\n-\n-createApp(App).mount('#app')\n- //routes\n- import router from \"./routes/index\"; \n- \n-const app= createApp(App)\n- \n- //routes \n- app.use(router)  \n app.mount('#app')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715783783812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,12 +9,9 @@\n import { createApp } from 'vue'\n import './style.css'\n import App from './App.vue'\n \n-createApp(App).mount('#app')\n import router from \"./router/index\"; \n  \n const app= createApp(App)\n- \n- //routes \n- app.use(router)  \n+app.use(router)  \n app.mount('#app')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715784134931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,16 @@\n /*\n  * @Author: Fleurxxx 984209872@qq.com\n  * @Date: 2024-05-15 22:28:01\n  * @LastEditors: Fleurxxx 984209872@qq.com\n- * @LastEditTime: 2024-05-15 22:36:16\n+ * @LastEditTime: 2024-05-15 22:42:14\n  * @FilePath: \\vite-project\\src\\main.ts\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\n  */\n import { createApp } from 'vue'\n import './style.css'\n import App from './App.vue'\n-\n-import router from \"./router/index\"; \n+import router from \"./router\"; \n  \n const app= createApp(App)\n app.use(router)  \n app.mount('#app')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715784140263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+/*\n+ * @Author: Fleurxxx 984209872@qq.com\n+ * @Date: 2024-05-15 22:28:01\n+ * @LastEditors: Fleurxxx 984209872@qq.com\n+ * @LastEditTime: 2024-05-15 22:36:16\n+ * @FilePath: \\vite-project\\src\\main.ts\n+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\n+ */\n+import { createApp } from 'vue'\n+import './style.css'\n+import App from './App.vue'\n+import router from \"./router\"; \n+ \n+const app= createApp(App)\n+app.use(router)  \n+app.mount('#app')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715784156068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,25 +8,9 @@\n  */\n import { createApp } from 'vue'\n import './style.css'\n import App from './App.vue'\n-import router from \"./router\"; \n+import router from \"./router/index.js\"; \n  \n const app= createApp(App)\n app.use(router)  \n-app.mount('#app')\n-/*\n- * @Author: Fleurxxx 984209872@qq.com\n- * @Date: 2024-05-15 22:28:01\n- * @LastEditors: Fleurxxx 984209872@qq.com\n- * @LastEditTime: 2024-05-15 22:42:14\n- * @FilePath: \\vite-project\\src\\main.ts\n- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\n- */\n-import { createApp } from 'vue'\n-import './style.css'\n-import App from './App.vue'\n-import router from \"./router\"; \n- \n-const app= createApp(App)\n-app.use(router)  \n app.mount('#app')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715784231385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,16 @@\n /*\n  * @Author: Fleurxxx 984209872@qq.com\n  * @Date: 2024-05-15 22:28:01\n  * @LastEditors: Fleurxxx 984209872@qq.com\n- * @LastEditTime: 2024-05-15 22:36:16\n+ * @LastEditTime: 2024-05-15 22:43:51\n  * @FilePath: \\vite-project\\src\\main.ts\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\n  */\n import { createApp } from 'vue'\n import './style.css'\n import App from './App.vue'\n-import router from \"./router/index.js\"; \n+import router from \"./router\"; \n  \n const app= createApp(App)\n app.use(router)  \n app.mount('#app')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715784453463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,12 @@\n  */\n import { createApp } from 'vue'\n import './style.css'\n import App from './App.vue'\n-import router from \"./router\"; \n+import router from \"./router\";\n+import { createPinia } from 'pinia' \n+const pinia = createPinia()\n+\n  \n const app= createApp(App)\n app.use(router)  \n app.mount('#app')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715784459305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n import './style.css'\n import App from './App.vue'\n import router from \"./router\";\n import { createPinia } from 'pinia' \n+const pinia = createPinia()\n \n-\n  \n const app= createApp(App)\n app.use(router)  \n app.mount('#app')\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1715783709322,
+            "name": "Commit-0",
+            "content": "import { createApp } from 'vue'\nimport './style.css'\nimport App from './App.vue'\n\ncreateApp(App).mount('#app')\nimport { createApp } from 'vue'\nimport App from './App.vue'\n \n //routes\n import router from \"./routes/index\"; \n \nconst app= createApp(App)\n \n //routes \n app.use(router)  \napp.mount('#app')"
+        }
+    ]
+}

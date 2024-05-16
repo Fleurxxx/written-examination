@@ -1,0 +1,142 @@
+{
+    "sourceFile": "src/router/index.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 31,
+            "patches": [
+                {
+                    "date": 1715783663172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1715783811835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n /*\r\n  * @Author: Fleurxxx 984209872@qq.com\r\n  * @Date: 2024-05-15 22:31:40\r\n  * @LastEditors: Fleurxxx 984209872@qq.com\r\n- * @LastEditTime: 2024-05-15 22:34:23\r\n+ * @LastEditTime: 2024-05-15 22:36:51\r\n  * @FilePath: \\vite-project\\src\\router\\index.js\r\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n  */\r\n import { createRouter, createWebHistory } from \"vue-router\";\r\n@@ -12,9 +12,8 @@\n let routes= [\r\n     {\r\n         path: '/',\r\n         name: 'home',\r\n-        //使用import可以路由懒加载，如果不使用，太多组件一起加载会造成白屏\r\n         component: () => import('../view/homeView.vue')\r\n     },\r\n     //{\r\n         //配置404页面\r\n"
+                },
+                {
+                    "date": 1715784057684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n let routes= [\r\n     {\r\n         path: '/',\r\n         name: 'home',\r\n-        component: () => import('../view/homeView.vue')\r\n+        component: () => import('../')\r\n     },\r\n     //{\r\n         //配置404页面\r\n         //path: '/:catchAll(.*)',\r\n"
+                },
+                {
+                    "date": 1715784079666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,16 +12,11 @@\n let routes= [\r\n     {\r\n         path: '/',\r\n         name: 'home',\r\n-        component: () => import('../')\r\n+        component: () => import('../view/Home.vue')\r\n     },\r\n-    //{\r\n-        //配置404页面\r\n-        //path: '/:catchAll(.*)',\r\n-        //name: '404',\r\n-        //component: () => import(''),\r\n-    //}\r\n+    \r\n ]\r\n // 路由\r\n const router = createRouter({\r\n     history: createWebHistory(),\r\n"
+                },
+                {
+                    "date": 1715784086785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n let routes= [\r\n     {\r\n         path: '/',\r\n         name: 'home',\r\n-        component: () => import('../view/Home.vue')\r\n+        component: () => import('../../view/Home.vue')\r\n     },\r\n     \r\n ]\r\n // 路由\r\n"
+                },
+                {
+                    "date": 1715784097987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n let routes= [\r\n     {\r\n         path: '/',\r\n         name: 'home',\r\n-        component: () => import('../../view/Home.vue')\r\n+        component: () => import('../view/Home.vue')\r\n     },\r\n     \r\n ]\r\n // 路由\r\n"
+                },
+                {
+                    "date": 1715784103325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         component: () => import('../view/Home.vue')\r\n     },\r\n     \r\n ]\r\n-// 路由\r\n+\r\n const router = createRouter({\r\n     history: createWebHistory(),\r\n     routes\r\n })\r\n"
+                },
+                {
+                    "date": 1715784259040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,5 @@\n const router = createRouter({\r\n     history: createWebHistory(),\r\n     routes\r\n })\r\n-// 导出\r\n export default router \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715784266052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n let routes= [\r\n     {\r\n         path: '/',\r\n         name: 'home',\r\n-        component: () => import('../view/Home.vue')\r\n+        \r\n     },\r\n     \r\n ]\r\n \r\n"
+                },
+                {
+                    "date": 1715784271551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n let routes= [\r\n     {\r\n         path: '/',\r\n         name: 'home',\r\n-        \r\n+        component: () => import('../view/Home.vue')\r\n     },\r\n     \r\n ]\r\n \r\n"
+                },
+                {
+                    "date": 1715784288937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+/*\r\n+ * @Author: Fleurxxx 984209872@qq.com\r\n+ * @Date: 2024-05-15 22:31:40\r\n+ * @LastEditors: Fleurxxx 984209872@qq.com\r\n+ * @LastEditTime: 2024-05-15 22:36:51\r\n+ * @FilePath: \\vite-project\\src\\router\\index.js\r\n+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n+ */\r\n+import { createRouter, createWebHistory } from \"vue-router\";\r\n+ \r\n+ \r\n+let routes= [\r\n+    {\r\n+        path: '/',\r\n+        name: 'home',\r\n+        component: () => import('../view/Home.vue'),\r\n+    },\r\n+    \r\n+]\r\n+\r\n+const router = createRouter({\r\n+    history: createWebHistory(),\r\n+    routes\r\n+})\r\n+export default router \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715789339195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,39 +12,14 @@\n let routes= [\r\n     {\r\n         path: '/',\r\n         name: 'home',\r\n-        component: () => import('../view/Home.vue'),\r\n+        component: () => import('@/view/Home.vue'),\r\n     },\r\n     \r\n ]\r\n \r\n const router = createRouter({\r\n     history: createWebHistory(),\r\n     routes\r\n })\r\n-export default router \n-/*\r\n- * @Author: Fleurxxx 984209872@qq.com\r\n- * @Date: 2024-05-15 22:31:40\r\n- * @LastEditors: Fleurxxx 984209872@qq.com\r\n- * @LastEditTime: 2024-05-15 22:36:51\r\n- * @FilePath: \\vite-project\\src\\router\\index.js\r\n- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n- */\r\n-import { createRouter, createWebHistory } from \"vue-router\";\r\n- \r\n- \r\n-let routes= [\r\n-    {\r\n-        path: '/',\r\n-        name: 'home',\r\n-        component: () => import('../view/Home.vue')\r\n-    },\r\n-    \r\n-]\r\n-\r\n-const router = createRouter({\r\n-    history: createWebHistory(),\r\n-    routes\r\n-})\r\n export default router \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715789345703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n let routes= [\r\n     {\r\n         path: '/',\r\n         name: 'home',\r\n-        component: () => import('@/view/Home.vue'),\r\n+        component: () => import(\"\"../view/Home.vue'),\r\n     },\r\n     \r\n ]\r\n \r\n"
+                },
+                {
+                    "date": 1715789351852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n let routes= [\r\n     {\r\n         path: '/',\r\n         name: 'home',\r\n-        component: () => import(\"\"../view/Home.vue'),\r\n+        component: () => import(\"../view/Home.vue\"'),\r\n     },\r\n     \r\n ]\r\n \r\n"
+                },
+                {
+                    "date": 1715789360703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n let routes= [\r\n     {\r\n         path: '/',\r\n         name: 'home',\r\n-        component: () => import(\"../view/Home.vue\"'),\r\n+        component: () => import('../view/Home.vue'),\r\n     },\r\n     \r\n ]\r\n \r\n"
+                },
+                {
+                    "date": 1715793417337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,14 @@\n /*\r\n  * @Author: Fleurxxx 984209872@qq.com\r\n  * @Date: 2024-05-15 22:31:40\r\n  * @LastEditors: Fleurxxx 984209872@qq.com\r\n- * @LastEditTime: 2024-05-15 22:36:51\r\n+ * @LastEditTime: 2024-05-16 01:16:57\r\n  * @FilePath: \\vite-project\\src\\router\\index.js\r\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n  */\r\n import { createRouter, createWebHistory } from \"vue-router\";\r\n+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'\r\n  \r\n  \r\n let routes= [\r\n     {\r\n"
+                },
+                {
+                    "date": 1715793439774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n  */\r\n import { createRouter, createWebHistory } from \"vue-router\";\r\n import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'\r\n  \r\n- \r\n+const routes: Array<RouteRecordRaw> = [\r\n let routes= [\r\n     {\r\n         path: '/',\r\n         name: 'home',\r\n"
+                },
+                {
+                    "date": 1715793452020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n import { createRouter, createWebHistory } from \"vue-router\";\r\n import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'\r\n  \r\n const routes: Array<RouteRecordRaw> = [\r\n-let routes= [\r\n     {\r\n         path: '/',\r\n         name: 'home',\r\n         component: () => import('../view/Home.vue'),\r\n"
+                },
+                {
+                    "date": 1715793486570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n /*\r\n  * @Author: Fleurxxx 984209872@qq.com\r\n  * @Date: 2024-05-15 22:31:40\r\n  * @LastEditors: Fleurxxx 984209872@qq.com\r\n- * @LastEditTime: 2024-05-16 01:16:57\r\n+ * @LastEditTime: 2024-05-16 01:18:06\r\n  * @FilePath: \\vite-project\\src\\router\\index.js\r\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n  */\r\n import { createRouter, createWebHistory } from \"vue-router\";\r\n@@ -16,10 +16,13 @@\n         component: () => import('../view/Home.vue'),\r\n     },\r\n     \r\n ]\r\n-\r\n const router = createRouter({\r\n+    history: createWebHashHistory(process.env.BASE_URL),\r\n+    routes\r\n+  })\r\n+const router = createRouter({\r\n     history: createWebHistory(),\r\n     routes\r\n })\r\n export default router \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715793494211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,5 @@\n const router = createRouter({\r\n     history: createWebHashHistory(process.env.BASE_URL),\r\n     routes\r\n   })\r\n-const router = createRouter({\r\n-    history: createWebHistory(),\r\n-    routes\r\n-})\r\n export default router \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715793501322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,9 @@\n const router = createRouter({\r\n     history: createWebHashHistory(process.env.BASE_URL),\r\n     routes\r\n   })\r\n+const router = createRouter({\r\n+    history: createWebHistory(),\r\n+    routes\r\n+})\r\n export default router \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715793507093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,13 +16,10 @@\n         component: () => import('../view/Home.vue'),\r\n     },\r\n     \r\n ]\r\n+\r\n const router = createRouter({\r\n-    history: createWebHashHistory(process.env.BASE_URL),\r\n-    routes\r\n-  })\r\n-const router = createRouter({\r\n     history: createWebHistory(),\r\n     routes\r\n })\r\n export default router \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715793528224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n  * @FilePath: \\vite-project\\src\\router\\index.js\r\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n  */\r\n import { createRouter, createWebHistory } from \"vue-router\";\r\n-import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'\r\n+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'\r\n  \r\n const routes: Array<RouteRecordRaw> = [\r\n     {\r\n         path: '/',\r\n"
+                },
+                {
+                    "date": 1715793811962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+/*\r\n+ * @Author: Fleurxxx 984209872@qq.com\r\n+ * @Date: 2024-05-15 22:31:40\r\n+ * @LastEditors: Fleurxxx 984209872@qq.com\r\n+ * @LastEditTime: 2024-05-16 01:23:31\r\n+ * @FilePath: \\vite-project\\src\\router\\index.js\r\n+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n+ */\r\n+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'\r\n+ \r\n+const routes: Array<RouteRecordRaw> = [\r\n+    {\r\n+        path: '/',\r\n+        name: 'home',\r\n+        component: () => import('../view/Home.vue') as any,\r\n+    },\r\n+    \r\n+]\r\n+\r\n+const router = createRouter({\r\n+    history: createWebHistory(),\r\n+    routes\r\n+})\r\n+export default router \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715793855630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,37 +1,12 @@\n /*\r\n  * @Author: Fleurxxx 984209872@qq.com\r\n  * @Date: 2024-05-15 22:31:40\r\n  * @LastEditors: Fleurxxx 984209872@qq.com\r\n- * @LastEditTime: 2024-05-16 01:23:31\r\n- * @FilePath: \\vite-project\\src\\router\\index.js\r\n- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n- */\r\n-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'\r\n- \r\n-const routes: Array<RouteRecordRaw> = [\r\n-    {\r\n-        path: '/',\r\n-        name: 'home',\r\n-        component: () => import('../view/Home.vue') as any,\r\n-    },\r\n-    \r\n-]\r\n-\r\n-const router = createRouter({\r\n-    history: createWebHistory(),\r\n-    routes\r\n-})\r\n-export default router \n-/*\r\n- * @Author: Fleurxxx 984209872@qq.com\r\n- * @Date: 2024-05-15 22:31:40\r\n- * @LastEditors: Fleurxxx 984209872@qq.com\r\n  * @LastEditTime: 2024-05-16 01:18:06\r\n  * @FilePath: \\vite-project\\src\\router\\index.js\r\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n  */\r\n-import { createRouter, createWebHistory } from \"vue-router\";\r\n import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'\r\n  \r\n const routes: Array<RouteRecordRaw> = [\r\n     {\r\n"
+                },
+                {
+                    "date": 1715797639644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,13 @@\n         path: '/',\r\n         name: 'home',\r\n         component: () => import('../view/Home.vue'),\r\n     },\r\n+    {\r\n+        path: '/test',\r\n+        name: 'test',\r\n+        component: () => import('../view/Home.vue'),\r\n+    },\r\n     \r\n ]\r\n \r\n const router = createRouter({\r\n"
+                },
+                {
+                    "date": 1715797645425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     },\r\n     {\r\n         path: '/test',\r\n         name: 'test',\r\n-        component: () => import('../view/Home.vue'),\r\n+        component: () => import('../view/test/IN.vue'),\r\n     },\r\n     \r\n ]\r\n \r\n"
+                },
+                {
+                    "date": 1715797709755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n  * @LastEditTime: 2024-05-16 01:18:06\r\n  * @FilePath: \\vite-project\\src\\router\\index.js\r\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n  */\r\n-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'\r\n+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'\r\n  \r\n const routes: Array<RouteRecordRaw> = [\r\n     {\r\n         path: '/',\r\n@@ -16,14 +16,14 @@\n     },\r\n     {\r\n         path: '/test',\r\n         name: 'test',\r\n-        component: () => import('../view/test/IN.vue'),\r\n+        component: () => import('../view/test/Index.vue'),\r\n     },\r\n     \r\n ]\r\n \r\n const router = createRouter({\r\n-    history: createWebHistory(),\r\n+    history: createWebHashHistory(),\r\n     routes\r\n })\r\n export default router \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715797741309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,8 @@\n     \r\n ]\r\n \r\n const router = createRouter({\r\n-    history: createWebHashHistory(),\r\n+    history: createWebHistory(process.env.BASE_URL),\r\n     routes\r\n })\r\n export default router \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715797746763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,8 @@\n     \r\n ]\r\n \r\n const router = createRouter({\r\n-    history: createWebHistory(process.env.BASE_URL),\r\n+    history: createWebHashHistory(),\r\n     routes\r\n })\r\n export default router \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1715847158215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n /*\r\n  * @Author: Fleurxxx 984209872@qq.com\r\n  * @Date: 2024-05-15 22:31:40\r\n  * @LastEditors: Fleurxxx 984209872@qq.com\r\n- * @LastEditTime: 2024-05-16 01:18:06\r\n+ * @LastEditTime: 2024-05-16 16:12:38\r\n  * @FilePath: \\vite-project\\src\\router\\index.js\r\n  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n  */\r\n import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'\r\n@@ -16,9 +16,9 @@\n     },\r\n     {\r\n         path: '/test',\r\n         name: 'test',\r\n-        component: () => import('../view/test/Index.vue'),\r\n+        component: () => import('../view/4/Index.vue'),\r\n     },\r\n     \r\n ]\r\n \r\n"
+                },
+                {
+                    "date": 1715847168391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     },\r\n     {\r\n         path: '/test',\r\n         name: 'test',\r\n-        component: () => import('../view/4/Index.vue'),\r\n+        component: () => import('../view/hook/Index.vue'),\r\n     },\r\n     \r\n ]\r\n \r\n"
+                }
+            ],
+            "date": 1715783663172,
+            "name": "Commit-0",
+            "content": "/*\r\n * @Author: Fleurxxx 984209872@qq.com\r\n * @Date: 2024-05-15 22:31:40\r\n * @LastEditors: Fleurxxx 984209872@qq.com\r\n * @LastEditTime: 2024-05-15 22:34:23\r\n * @FilePath: \\vite-project\\src\\router\\index.js\r\n * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE\r\n */\r\nimport { createRouter, createWebHistory } from \"vue-router\";\r\n \r\n \r\nlet routes= [\r\n    {\r\n        path: '/',\r\n        name: 'home',\r\n        //使用import可以路由懒加载，如果不使用，太多组件一起加载会造成白屏\r\n        component: () => import('../view/homeView.vue')\r\n    },\r\n    //{\r\n        //配置404页面\r\n        //path: '/:catchAll(.*)',\r\n        //name: '404',\r\n        //component: () => import(''),\r\n    //}\r\n]\r\n// 路由\r\nconst router = createRouter({\r\n    history: createWebHistory(),\r\n    routes\r\n})\r\n// 导出\r\nexport default router "
+        }
+    ]
+}
