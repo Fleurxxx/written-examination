@@ -8,7 +8,7 @@
           <mxGeometry x="640" y="200" width="440" height="660" as="geometry" />
         </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-3" value="分布详情（AssetDetails)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
-          <mxGeometry x="210" y="230" width="280" height="310" as="geometry" />
+          <mxGeometry x="210" y="230" width="280" height="270" as="geometry" />
         </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-4" value="assetsList：含有资产的币种列表" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=1;whiteSpace=wrap;html=1;movable=1;resizable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-3">
           <mxGeometry y="30" width="280" height="30" as="geometry" />
@@ -21,16 +21,11 @@
             <mxRectangle y="90" width="280" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="P4U7ozT1BsUMLbKOItGa-12" value="accountType：&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; text-align: center;&quot;&gt;当前选中查看的钱包类型&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=1;whiteSpace=wrap;html=1;container=1;movable=1;resizable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-3">
-          <mxGeometry y="130" width="280" height="40" as="geometry">
-            <mxRectangle y="90" width="280" height="30" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-6" value="onSearch：(val: string) =&amp;gt; void&amp;nbsp; &amp;nbsp; 搜索回调" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=1;whiteSpace=wrap;html=1;movable=1;resizable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-3">
-          <mxGeometry y="170" width="280" height="40" as="geometry" />
+          <mxGeometry y="130" width="280" height="40" as="geometry" />
         </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-95" value="State:&lt;div&gt;isDistributionExpanded&lt;/div&gt;&lt;div&gt;currentCoinItem&lt;/div&gt;&lt;div&gt;coinNameQuery&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;totalAssets&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=1;whiteSpace=wrap;html=1;movable=1;resizable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-3">
-          <mxGeometry y="210" width="280" height="100" as="geometry" />
+          <mxGeometry y="170" width="280" height="100" as="geometry" />
         </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-18" value="币种走马灯（Carousel）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" vertex="1" parent="1">
           <mxGeometry x="690" y="230" width="350" height="230" as="geometry" />
@@ -191,8 +186,9 @@
         <mxCell id="P4U7ozT1BsUMLbKOItGa-81" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;可见钱包币种分布详情&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" vertex="1" parent="1">
           <mxGeometry x="765" y="490" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="P4U7ozT1BsUMLbKOItGa-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="P4U7ozT1BsUMLbKOItGa-12">
+        <mxCell id="P4U7ozT1BsUMLbKOItGa-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="380" as="sourcePoint" />
             <mxPoint x="690" y="1005" as="targetPoint" />
             <Array as="points">
               <mxPoint x="540" y="380" />
