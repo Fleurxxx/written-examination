@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="第 1 页" id="jlFaa8lIrXFHTDskXryA">
-    <mxGraphModel dx="1626" dy="1539" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2305" dy="1853" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -129,43 +129,20 @@
           <mxGeometry y="120" width="350" height="120" as="geometry" />
         </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-49" value="菜单（ToggleAssetMenu）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="690" y="-160" width="340" height="170" as="geometry" />
+          <mxGeometry x="690" y="-160" width="340" height="140" as="geometry" />
         </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-50" value="data" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-49">
           <mxGeometry y="30" width="340" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="P4U7ozT1BsUMLbKOItGa-51" value="currentOption: 当前选中项" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-49">
+        <mxCell id="P4U7ozT1BsUMLbKOItGa-52" value="onClick：（val）=&amp;gt;void 点击某一项的回调" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-49">
           <mxGeometry y="60" width="340" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="P4U7ozT1BsUMLbKOItGa-52" value="onClick：（val）=&amp;gt;void 点击某一项的回调" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-49">
-          <mxGeometry y="90" width="340" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-102" value="State：&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;isOpen&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-49">
-          <mxGeometry y="120" width="340" height="50" as="geometry" />
+          <mxGeometry y="90" width="340" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="P4U7ozT1BsUMLbKOItGa-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.009;exitY=-0.061;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="P4U7ozT1BsUMLbKOItGa-99" target="P4U7ozT1BsUMLbKOItGa-51">
+        <mxCell id="P4U7ozT1BsUMLbKOItGa-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1.009;exitY=-0.061;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="P4U7ozT1BsUMLbKOItGa-99">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="620" y="-40" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="P4U7ozT1BsUMLbKOItGa-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.051;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="P4U7ozT1BsUMLbKOItGa-64" target="P4U7ozT1BsUMLbKOItGa-99">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="50" y="220" as="sourcePoint" />
-            <mxPoint x="205.87999999999988" y="52.940000000000055" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="105" y="81" />
-              <mxPoint x="105" y="35" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="P4U7ozT1BsUMLbKOItGa-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.133;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.083;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="P4U7ozT1BsUMLbKOItGa-64" target="P4U7ozT1BsUMLbKOItGa-10">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="160.00000000000023" y="350" as="targetPoint" />
-            <mxPoint x="50" y="240" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="105" y="83" />
-              <mxPoint x="105" y="325" />
-            </Array>
+            <mxPoint x="690" y="-84.95238095238096" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-56" value="入口（index）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -177,7 +154,7 @@
         <mxCell id="P4U7ozT1BsUMLbKOItGa-58" value="&lt;pre style=&quot;text-align: center;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 13.0667px;&quot;&gt;   totalBalance: 总金额&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-56">
           <mxGeometry y="60" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="P4U7ozT1BsUMLbKOItGa-64" value="&lt;pre style=&quot;text-align: center;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 13.0667px;&quot;&gt;   currentOption: 当前选中的钱包类型&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-56">
+        <mxCell id="P4U7ozT1BsUMLbKOItGa-64" value="&lt;pre style=&quot;text-align: center;&quot;&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 13.0667px;&quot;&gt;   currentOption: 当前选中的选项&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-56">
           <mxGeometry y="90" width="280" height="30" as="geometry" />
         </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-59" value="&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;span id=&quot;docs-internal-guid-6445ed89-7fff-29d2-e388-d4f5b30f36d2&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; color: rgb(67, 67, 67); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;font style=&quot;&quot;&gt;这里做团队App和Api总资产统计和&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(67, 67, 67); font-family: Arial, sans-serif; white-space-collapse: preserve;&quot;&gt;&amp;nbsp;symbol 统计的查询&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-56">
@@ -227,16 +204,13 @@
           <mxGeometry x="200" y="20" width="280" height="30" as="geometry" />
         </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-97" value="AssetDistributionChart" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="210" y="-70" width="280" height="240" as="geometry" />
-        </mxCell>
-        <mxCell id="P4U7ozT1BsUMLbKOItGa-98" value="&lt;pre style=&quot;text-align: center; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;currentOption：当前选中查看的钱包类型&lt;/span&gt;&lt;/pre&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-97">
-          <mxGeometry y="30" width="280" height="40" as="geometry" />
+          <mxGeometry x="210" y="-70" width="280" height="200" as="geometry" />
         </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-99" value="&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.0667px; text-align: center; background-color: rgb(255, 255, 255);&quot;&gt;onClick：（val)=&amp;gt;void&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.0667px; text-align: center;&quot;&gt;切换菜单回调，方便数据在主要资产和分布详情共用选中数据&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-97">
-          <mxGeometry y="70" width="280" height="70" as="geometry" />
+          <mxGeometry y="30" width="280" height="70" as="geometry" />
         </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-100" value="State:&lt;div&gt;pieData&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;totalAssets&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="P4U7ozT1BsUMLbKOItGa-97">
-          <mxGeometry y="140" width="280" height="100" as="geometry" />
+          <mxGeometry y="100" width="280" height="100" as="geometry" />
         </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-110" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font style=&quot;&quot; face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 13.0667px;&quot;&gt;AppAssetStatistics&lt;/span&gt;&lt;/font&gt;&lt;font style=&quot;background-color: rgb(30, 31, 34);&quot; face=&quot;JetBrains Mono, monospace&quot; color=&quot;#bcbec4&quot;&gt;&lt;span style=&quot;font-size: 9.8pt;&quot;&gt;&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="690" y="540" width="350" height="290" as="geometry" />
@@ -302,6 +276,12 @@
           <mxGeometry y="90" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="P4U7ozT1BsUMLbKOItGa-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.001;entryY=0.805;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="P4U7ozT1BsUMLbKOItGa-124" target="P4U7ozT1BsUMLbKOItGa-130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P4U7ozT1BsUMLbKOItGa-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.005;entryY=0.676;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="P4U7ozT1BsUMLbKOItGa-64" target="P4U7ozT1BsUMLbKOItGa-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="P4U7ozT1BsUMLbKOItGa-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="P4U7ozT1BsUMLbKOItGa-64" target="P4U7ozT1BsUMLbKOItGa-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
